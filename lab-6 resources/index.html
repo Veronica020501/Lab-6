@@ -11,9 +11,10 @@
     <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar md:navbar-expand bg-1 fg-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Craft Hub</a>
+            <a class="navbar-brand" href="#">Home Bakery</a>
             <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
@@ -38,6 +39,38 @@
             </dialog>
         </div>
     </nav>
+
+    <!-- Carousel -->
+    <div id="carouselStackedIndicators" class="carousel slide">
+      <div class="carousel-inner rounded-5">
+        <div class="carousel-item active">
+          <img src="images/apple_pie.jpg" class="d-block w-100" alt="Apple Pie">
+        </div>
+        <div class="carousel-item">
+          <img src="images/chocolate_chip_cookies.jpg" class="d-block w-100" alt="Chocolate Chip Cookies">
+        </div>
+        <div class="carousel-item">
+          <img src="images/loaf_cake.jpg" class="d-block w-100" alt="Loaf Cake">
+        </div>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="prev">
+            <span class="carousel-icon-prev" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide="next">
+            <span class="carousel-icon-next" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
     
 </body>
 </html>
