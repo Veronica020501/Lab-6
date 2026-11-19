@@ -11,9 +11,11 @@
     <script type="module" src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar md:navbar-expand bg-1 fg-2">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Craft Hub</a>
+            <a class="navbar-brand" href="#">Home Bakery</a>
             <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
@@ -38,5 +40,48 @@
             </dialog>
         </div>
     </nav>
+
+    <!-- Contact Information  -->
+    <form >
+        <div class="row g-4">
+            <!-- First Name -->
+            <div class="mb-3 md:col-6">
+                <label for="firstname" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstname" aria-describedby="Enter your first name">
+            </div>
+            <!-- Last Name -->
+            <div class="mb-3 md:col-6">
+                <label for="lastname" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastname">
+            </div>
+            <!-- Email -->
+            <div class="mb-3 md:col-6">
+                <label for="emailaddress" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailaddress" aria-describedby="Enter your email">
+            </div>
+            <!-- Select Menu -->
+            <div class="mb-3 md:col-6">
+                <label for="selectmenu" class="form-label">Payment Type</label>
+                <!--   from-select created the styling for the drop-down menu -->
+                <select class="form-select" id="payment">  
+                    <option value="Credit"> Credit </option>
+                    <option value="Debit"> Debit </option>
+                    <option value="PayPal"> PayPal</option>
+                    <option value="Cash"> Cash (in store) </option>
+                </select>
+            </div>
+            <!-- Message Textarea -->
+            <div class="mb-3 md:col-6">
+                <label class="form-label" for="textarea"> Order Notes </label>
+                <textarea class="form-control" id="textarea" rows="5" name="message"></textarea>
+            </div>
+            <!-- Terms and Conditions -->
+            <div class="mb-3 form-field md:col-6">
+                <input type="checkbox" id="confirmation" class="check">
+                <label for="confirmation">I confirm that the order being placed is correct</label>
+            </div>
+        </div>
+        <button type="submit" class="btn-solid theme-primary">Submit</button>
+    </form>
 </body>
 </html>
