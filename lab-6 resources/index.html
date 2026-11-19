@@ -75,67 +75,267 @@
     </div>
 
     <!--Cards & View More Heading -->
-    <h2> View More Products</h2>
+    <h2 class="mt-10 mb-10"> View More Products</h2>
 
     <!-- Card 1 -->
     <div class="container mt-5">
         <div class="row g-4">
             <div class="col-12 md:col-6 lg:col-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body d-flex flex-coloumn">
                         <img src="images/flan.jpg" class="card-img" alt="Flan">
                         <h5 class="mt-2 mb-0">Flan</h5>
                         <p class="card-text fg-2">Delicious, silky homemade flan.</p>
+                        
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <details class="accordion-item" name="Flan Accordion">
+                                <summary class="accordion-header">
+                                    Flan Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Flan is a smooth, creamy baked custard topped with caramel, traditionally made from eggs, milk, sugar, and vanilla.
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Button & Dialog -->
+                        <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#Flan_Dialog">
+                            Order Flan
+                        </button>
+
+                        <dialog class="dialog" id="Flan_Dialog">
+                        <div class="dialog-header">
+                            <h1 class="dialog-title">Purchase Flan</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            <p>Enjoy our homemade, creamy flan topped with rich caramel.</p>
+                            <p> Would you like to place an order?</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            <button type="button" class="btn-solid theme-primary">Place Order</button>
+                        </div>
+                        </dialog>
+
                     </div>
                 </div>
             </div>
+                
             <!-- Card 2 -->
             <div class="col-12 md:col-6 lg:col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <img src="images/harrisa.jpg" class="card-img" alt="Egyptian Harrisa">
+                    <div class="card h-100" style="width: 18rem;">
+                        <div class="card-body d-flex flex-coloumn">
+                            <img src="images/harrisa.jpg" class="card-img" alt="Egyptian Harissa">
                             <h5 class="mt-2 mb-0">Egyptian harrisa</h5>
-                            <p class="card-text fg-2">Sweet, rich homemade Egyptian harrisa.</p>
+                            <p class="card-text fg-2">Sweet, rich homemade Egyptian harissa.</p>
+                            <!-- Accordion -->
+                            <div class="accordion">
+                                <details class="accordion-item" name="Harrisa Accordion">
+                                    <summary class="accordion-header">
+                                        Harissa Details
+                                        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                    </summary>
+                                    <div class="accordion-body">
+                                        Egyptian Harissa is a traditional semolina cake that is both dense and sweet. It is typically made with semolina flour, sugar, and various nuts, often filled with shredded coconut and raisins. The cake is soaked in a rich honey syrup, giving it a moist texture and a fragrant flavor.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <!-- Button & Dialog -->
+                            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#Harissa_Dialog">
+                                Order Harissa
+                            </button>
+
+                            <dialog class="dialog" id="Harissa_Dialog">
+                            <div class="dialog-header">
+                                <h1 class="dialog-title">Purchase Harissa</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Enjoy our homemade harissa with sugar syrup.</p>
+                                <p> Would you like to place an order?</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                                <button type="button" class="btn-solid theme-primary">Place Order</button>
+                            </div>
+                            </dialog>
+
                         </div>
                     </div>
                 </div>
             <!-- Card 3 -->
             <div class="col-12 md:col-6 lg:col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                    <div class="card h-100" style="width: 18rem;">
+                        <div class="card-body d-flex flex-coloumn">
                             <img src="images/lemon_slices.jpg" class="card-img" alt="Lemon Slices">
-                            <h5 class="mt-2 mb-0">Lemon Slices</h5>
+                            <h5 class="mt-2 mb-0">Lemon Loaf Slices</h5>
                             <p class="card-text fg-2">Soft, pillowy lemon slices.</p>
+                             <!-- Accordion -->
+                            <div class="accordion">
+                                <details class="accordion-item" name="Lemon Loaf Slices Accordion">
+                                    <summary class="accordion-header">
+                                        Lemon Loaf Details
+                                        <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                    </summary>
+                                    <div class="accordion-body">
+                                        A lemon loaf is a moist and tender cake that features a bright and zesty lemon flavor. It is typically made with ingredients like flour, sugar, eggs, baking powder, and lemon juice.
+                                    </div>
+                                </details>
+                            </div>
+
+                            <!-- Button & Dialog -->
+                            <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#Loaf_Dialog">
+                                Order Lemon Loaf Slices
+                            </button>
+
+                            <dialog class="dialog" id="Loaf_Dialog">
+                            <div class="dialog-header">
+                                <h1 class="dialog-title">Purchase Lemon Loaf Slices</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                            </div>
+                            <div class="dialog-body">
+                                <p>Enjoy our homemade, fluffy lemon loaf slices.</p>
+                                <p> Would you like to place an order?</p>
+                            </div>
+                            <div class="dialog-footer">
+                                <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                                <button type="button" class="btn-solid theme-primary">Place Order</button>
+                            </div>
+                            </dialog>
+
                         </div>
                     </div>
                 </div>
             <!-- Card 4 -->
             <div class="col-12 md:col-6 lg:col-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body d-flex flex-coloumn">
                         <img src="images/single_serve_vanilla_cake.jpg" class="card-img" alt="Single Serve Vanilla Cake">
                         <h5 class="mt-2 mb-0">Single Serve Vanilla Cake</h5>
                         <p class="card-text fg-2">Fluffy, classic vanilla cake.</p>
+                        
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <details class="accordion-item" name="Vanilla Cake Accordion">
+                                <summary class="accordion-header">
+                                    Vanilla Cake Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    A vanilla cake is a classic dessert known for its plush, moist, and fluffy crumb. It typically features a rich vanilla flavor, often enhanced with vanilla bean paste or extract. Common ingredients include butter, sugar, flour, eggs, and vanilla extract.
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Button & Dialog -->
+                        <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#VCake_Dialog">
+                            Order Vanilla Cake
+                        </button>
+
+                        <dialog class="dialog" id="VCake_Dialog">
+                        <div class="dialog-header">
+                            <h1 class="dialog-title">Purchase Vanilla Cake</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            <p>Enjoy our classic, homemade vanilla cake.</p>
+                            <p> Would you like to place an order?</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            <button type="button" class="btn-solid theme-primary">Place Order</button>
+                        </div>
+                        </dialog>
+
                     </div>
                 </div>
             </div>
             <!-- Card 5 -->
-             <div class="col-12 md:col-6 lg:col-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+            <div class="col-12 md:col-6 lg:col-4">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body d-flex flex-coloumn">
                         <img src="images/soft_pretzels.jpg" class="card-img" alt="Soft Pretzels">
                         <h5 class="mt-2 mb-0">Soft Pretzels</h5>
                         <p class="card-text fg-2">Giant, salty soft pretzels .</p>
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <details class="accordion-item" name="Pretzel Accordion">
+                                <summary class="accordion-header">
+                                    Soft Pretzel Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    A soft pretzel is a chewy, yeast‑leavened bread shaped into a knot and dipped in an alkaline solution (lye or baking soda) to create its glossy brown crust and signature flavor.
+                                </div>
+                            </details>
+                        </div>
+
+                        <!-- Button & Dialog -->
+                        <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#Pretzel_Dialog">
+                            Order Soft Pretzels
+                        </button>
+
+                        <dialog class="dialog" id="Pretzel_Dialog">
+                        <div class="dialog-header">
+                            <h1 class="dialog-title">Purchase Soft Pretzels</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            <p>Enjoy our homemade, fluffy soft pretzels.</p>
+                            <p> Would you like to place an order?</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            <button type="button" class="btn-solid theme-primary">Place Order</button>
+                        </div>
+                        </dialog>
+
                     </div>
                 </div>
             </div>
             <!-- Card 6 -->
             <div class="col-12 md:col-6 lg:col-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
+                <div class="card h-100" style="width: 18rem;">
+                    <div class="card-body d-flex flex-coloumn">
                         <img src="images/carrot_cake.jpg" class="card-img" alt="Single Serve Carrot Cake">
                         <h5 class="mt-2 mb-0">Single Serve Carrot Cake</h5>
                         <p class="card-text fg-2">Classic, delicious single serve carrot cake with cream cheese frosting</p>
+                        <!-- Accordion -->
+                        <div class="accordion">
+                            <details class="accordion-item" name="Carrot Cake Accordion">
+                                <summary class="accordion-header">
+                                    Carrot Cake Details
+                                    <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m2 5 6 6 6-6"/></svg>
+                                </summary>
+                                <div class="accordion-body">
+                                    Carrot cake is a moist, richly spiced cake made with freshly grated carrots; The cake is typically layered and topped with a smooth cream cheese frosting.
+                            </details>
+                        </div>
+
+                        <!-- Button & Dialog -->
+                        <button type="button" class="btn-solid theme-primary mt-auto" data-bs-toggle="dialog" data-bs-target="#CCake_Dialog">
+                            Order Carrot Cake
+                        </button>
+
+                        <dialog class="dialog" id="CCake_Dialog">
+                        <div class="dialog-header">
+                            <h1 class="dialog-title">Purchase Soft Pretzels</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"></button>
+                        </div>
+                        <div class="dialog-body">
+                            <p>Enjoy our homemade, decadent carrot cake.</p>
+                            <p> Would you like to place an order?</p>
+                        </div>
+                        <div class="dialog-footer">
+                            <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">Close</button>
+                            <button type="button" class="btn-solid theme-primary">Place Order</button>
+                        </div>
+                        </dialog>
+
                     </div>
                 </div>
             </div>
