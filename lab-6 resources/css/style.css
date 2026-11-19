@@ -1,12 +1,24 @@
-.card-img{
-    width:100%;
-    height: 250px;
-    object-fit: cover; /* resizes the image to its container -- cover preserves the image ratios and fills the container */
+:root {
+    --bs-primary-bg: #795548;
+    --bs-primary-fg: #3B2A20;
+    --bs-primary-fg-emphasis: #3B2A20;
+    --bs-primary-border: #795548;
+    --bs-primary-focus-ring: #795548;
+    --bs-primary-contrast: #FFFFFF;
 }
-
+.btn-solid.theme-primary {
+    --bs-theme-bg: #795548;
+    --bs-theme-contrast: #FFFFFF;
+}
+.card-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
 .carousel-item img {
     width: 100%;
     height: 700px;
-    object-fit: contain; /* contain -- preserves the image ratios and the image fills the container without overflowing  */
+    object-fit: contain;
 }
+
 
