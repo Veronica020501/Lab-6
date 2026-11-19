@@ -20,5 +20,10 @@
     height: 700px;
     object-fit: contain;
 }
-
+.card{
+    background-color: antiquewhite;
+    p, h5{
+        color: #3B2A20;
+    }
+}
 
